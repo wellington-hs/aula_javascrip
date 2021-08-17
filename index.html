@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Minha Página</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body onload="load()">
+        <section id="content">
+            <article class="flexbox">  <!-- Criando botão-->
+            
+                <button type="button" onclick="clique()">Clique aqui</button>
+
+                <p id="agradecimento" onclick="redirecionar()"></p>
+
+                <button type="button" onclick="apagar()">Apagar</button>
+
+                <p id="mousemove" onmouseover="passamouse(this)" onmouseout="voltamouse(this)">Passe o mouse aqui</p>
+                <p id="mousemove2" onmouseover="passamouse(this)" onmouseout="voltamouse(this)">Passe o mouse aqui</p>
+                <p id="mousemove3" onmouseover="passamouse(this)" onmouseout="voltamouse(this)">Passe o mouse aqui</p>
+                
+            </article>
+            <div class="flexbox2">
+
+                <p><b>"O VALOR VAI SAIR NO CONSOLE"</b></p>
+
+                <select class="select" onchange="funcaoChange(this)">
+                
+                    <option value="1">Valor1</option>
+                    <option value="2">Valor2</option>
+                    <option value="3">Valor3</option>
+
+                </select>
+            </div>
+            
+        </section>
+
+        <style> /* CSS do projeto*/
+            
+            #content{
+                background-color: rgb(164, 164, 212);
+                height: 500px;
+                display: flex;  
+                align-items:initial; /*Linha Y. Topo, centro ou rodapé*/
+                justify-content: center; /*Linha X. inicial, centro ou final da tela*/
+                flex-direction: row; 
+                padding-top: 20px;
+                 
+            }
+            .flexbox{
+                background-color: rgb(182, 182, 171);
+                text-align: center;
+                padding-top: 5px;
+                height: 200px;
+                width: 200px;
+                border: 2px solid rgb(104, 88, 196);
+            }
+            .flexbox2{
+                
+                background-color: rgb(182, 182, 171);
+                height: 200px;
+                width: 300px;
+                border: 2px solid rgb(104, 88, 196);
+            }
+            .select{
+                
+
+                width:300px;
+                border: 2px solid rgb(16, 16, 17);
+
+            }
+        </style>
+
+    </body>
+    
+
+</html>
